@@ -4,10 +4,11 @@ int main(){
     float a, b, ad, sub, mul, div;
     int opcao;
 
-    printf("\n digite:\n 1 para adicao: \n 2 para subtracao: \n 3 para multiplicacao \n 4 para divisao \n ");
+    do{
+            printf("\n digite:\n 1 para adicao: \n 2 para subtracao: \n 3 para multiplicacao \n 4 para divisao \n 0 para sair\n ");
     scanf("%d", &opcao);
 
-    if(opcao > 0 && opcao < 5 ){
+    if(opcao >= 0 && opcao < 5 ){
 
     printf("\n digite um numero: ");
     scanf("%f", &a);
@@ -45,8 +46,11 @@ int main(){
     
             break;
         default:
-            printf("opcao invalida.");
+            printf("\n Opcao invalida. \n Escolha outra opcao");
     }
+
+    }while(opcao != 0);
+
  return 0;
 }
 
