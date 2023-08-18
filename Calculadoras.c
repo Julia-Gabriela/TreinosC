@@ -42,7 +42,7 @@ int main()
             {
                 //Calculo Numerico
                 case 1:
-                    while(opcao>=5 || opcao<0){
+                    //while(opcao>=5 || opcao<0){
                         printf("\n------------Calculadora Numerica!!!------------");
                         printf("\n---------------------------------------------------");
                         printf("\n digite:\n 1 para adicao: \n 2 para subtracao: \n 3 para multiplicacao \n 4 para divisao \n 0 para sair\n ");
@@ -93,7 +93,7 @@ int main()
                             printf("\n---------------------------------------------------");
                             printf("\n Opcao invalida!!! \n Escolha outra opcao:");
                             printf("\n---------------------------------------------------");
-                        }
+                        //}
                     }
                 break;
                 //calculo de combustivel
