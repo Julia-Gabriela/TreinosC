@@ -30,7 +30,7 @@ int main()
 
     do
     {
-        printf("\n ------------Seja Bem Vindo!!!------------");
+        printf("\n -----------------Seja Bem Vindo!!!----------------");
         printf("\n---------------------------------------------------");
         
         printf("\n Por favor selecione o tipo de calculo deseja realizar: \n 1-Numerico \n 2-Combustivel \n 0-Sair...\n");
@@ -42,8 +42,8 @@ int main()
             {
                 //Calculo Numerico
                 case 1:
-                    //while(opcao>=5 || opcao<0){
-                        printf("\n------------Calculadora Numerica!!!------------");
+                    do{
+                        printf("\n--------------Calculadora Numerica!!!--------------");
                         printf("\n---------------------------------------------------");
                         printf("\n digite:\n 1 para adicao: \n 2 para subtracao: \n 3 para multiplicacao \n 4 para divisao \n 0 para sair\n ");
                         scanf("%d", &opcao);
@@ -63,16 +63,19 @@ int main()
                                 case 1:
                                     ad = a+b;
                                         printf("\n%.2f mais %.2f e igual a %.2f", a, b, ad);
+                                        opcao = 0;
                                     break;
 
                                 case 2:
                                     sub = a-b;
                                         printf("\n%.2f menos %.2f e igual a %.2f", a, b, sub);
+                                        opcao = 0;
                                     break;
 
                                 case 3:
                                     mul = a*b;
                                         printf("\n%.2f vezes %.2f e igual a %.2f", a, b, mul);
+                                        opcao = 0;
                                     break;
 
                                 case 4:
@@ -80,9 +83,11 @@ int main()
 
                                         if(b == 0){
                                             printf("\nNenhum numero e divisivel por 0");
+                                            opcao = 0;
                                         }
                                         else{
                                             printf("\n%.2f dividido por %.2f e igual a %.2f", a, b, div);
+                                            opcao = 0;
                                         }
                             
                                     break;
@@ -93,9 +98,11 @@ int main()
                             printf("\n---------------------------------------------------");
                             printf("\n Opcao invalida!!! \n Escolha outra opcao:");
                             printf("\n---------------------------------------------------");
-                        //}
-                    }
+                        }
+                    } while(opcao!=0 );
+                
                 break;
+                
                 //calculo de combustivel
                 
                 case 2:
