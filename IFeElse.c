@@ -3,10 +3,10 @@ int main()
 {
   int a, b;
     
-    printf("\n digite A: ");
+    printf("\n digite A : ");
     scanf("%d", &a);
 
-    printf("\n digite B: ");
+    printf("\n digite B : ");
     scanf("%d", &b);
 
     if(a==b){
