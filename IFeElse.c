@@ -3,10 +3,10 @@ int main()
 {
   int a, b;
     
-    printf("\n digite A : ");
+    printf("\n digite A: ");
     scanf("%d", &a);
 
-    printf("\n digite B : ");
+    printf("\n digite B: ");
     scanf("%d", &b);
 
     if(a==b){
@@ -17,7 +17,7 @@ int main()
     printf("\n%d e menor que %d", a, b);
     }
     else{
-    printf("\n%d e maior que %d", a, b);
+    printf("\n%d e maior que  %d", a, b);
     }
 
 
