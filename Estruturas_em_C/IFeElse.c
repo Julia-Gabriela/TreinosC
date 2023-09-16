@@ -17,7 +17,7 @@ int main()
     printf("\n%d e menor que %d", a, b);
     }
     else{
-    printf("\n%d e maior que %d", a, b);
+    printf("\n%d e maior que  %d", a, b);
     }
 
 
